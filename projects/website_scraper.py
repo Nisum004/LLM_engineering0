@@ -2,6 +2,8 @@ from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
+from urllib.parse import urljoin
+
 
 
 class Website:
@@ -43,5 +45,15 @@ class Website:
             tag.decompose()
 
         self.text = soup.get_text(separator="\n", strip=True)
+
+        self.links = []
+        
+        for a in soup.find_all("a", href=True):
+            href = a["href"]
+
+        # Optional: filter junk links
+            if href.startswith("http") or href.startswith("/"):
+                self.links.append(href)
 def scrape_website(url, wait_for_user=True):
     return Website(url, wait_for_user=wait_for_user)
+
