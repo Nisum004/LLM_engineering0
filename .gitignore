@@ -1,0 +1,18 @@
+# Virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Build files
+*.egg-info/
+dist/
+build/
+
+# OS files
+.DS_Store
+
+# Environment variables
+.env
+
