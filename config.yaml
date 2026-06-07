@@ -1,0 +1,18 @@
+model_list:
+  - model_name: llama3.2
+    litellm_params:
+      model: ollama/llama3.2
+      api_base: "http://localhost:11434"
+  - model_name: mistral
+    litellm_params:
+      model: ollama/mistral
+      api_base: "http://localhost:11434"
+  - model_name: gpt-oss-120b                 # The alias you will call via the proxy
+    litellm_params:
+      model: groq/openai/gpt-oss-120b        # The exact Groq model identifier for LiteLLM
+      api_key: "os.environ/GROQ_API_KEY"     # Pulls from your environment variables
+
+
+general_settings:
+  master_key: "sk-_ApGaaWdwtAergWcafVgi_RgUO0sAokZr7L5RtcnUbU"
+

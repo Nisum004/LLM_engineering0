@@ -1,0 +1,50 @@
+RANK 1:
+
+embeddings = HuggingFaceEmbeddings(model = "BAAI/bge-base-en-v1.5")
+
+(chunk_size=500, chunk_overlap=200)
+k = 10
+
+result=
+Mean Reciprocal Rank (MRR)
+0.8676
+Normalized DCG (nDCG)
+0.8449
+Keyword Coverage
+96.5%
+
+--------------------------------------------------------------------------
+
+RANK2:
+
+embeddings = HuggingFaceEmbeddings(model="BAAI/bge-m3")
+
+(chunk_size=500, chunk_overlap=200)
+k = 10
+
+RESULT: 
+Mean Reciprocal Rank (MRR)
+0.8221
+Normalized DCG (nDCG)
+0.8141
+Keyword Coverage
+93.4%
+
+---------------------------------------------------------------------------
+
+RANK3:
+
+embeddings = OllamaEmbeddings(model="nomic-embed-text")
+
+(chunk_size=500, chunk_overlap=200)
+k = 10
+
+result = 
+Mean Reciprocal Rank (MRR)
+0.2771
+Normalized DCG (nDCG)
+0.3192
+Keyword Coverage
+49.2%
+
+

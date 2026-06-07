@@ -1,0 +1,72 @@
+# ── Core ──────────────────────────────────────────────────────────────────────
+python-dotenv
+setuptools
+wheel
+
+# ── Jupyter ───────────────────────────────────────────────────────────────────
+ipykernel
+ipywidgets
+jupyterlab
+nbformat
+
+# ── Data & Math ───────────────────────────────────────────────────────────────
+numpy
+pandas
+scipy
+scikit-learn
+xgboost
+pyarrow
+
+# ── Visualisation ─────────────────────────────────────────────────────────────
+matplotlib
+plotly
+jupyter-dash
+
+# ── PyTorch & ML ──────────────────────────────────────────────────────────────
+torch
+transformers
+sentence-transformers
+datasets==2.21.0
+tiktoken
+tqdm
+
+# ── LLM Providers ─────────────────────────────────────────────────────────────
+openai
+anthropic
+groq
+google-generativeai
+google-genai
+ollama
+
+# ── LangChain ─────────────────────────────────────────────────────────────────
+langchain
+langchain-core
+langchain-text-splitters
+langchain-openai
+langchain-chroma
+langchain-community
+langchain-huggingface
+langchain-ollama
+langchain-anthropic
+langchain-experimental
+
+# ── Vector DB ─────────────────────────────────────────────────────────────────
+chromadb
+
+# ── Gradio & Web ──────────────────────────────────────────────────────────────
+gradio
+requests
+beautifulsoup4
+feedparser
+
+# ── Audio ─────────────────────────────────────────────────────────────────────
+pydub
+
+# ── Infra & Monitoring ────────────────────────────────────────────────────────
+modal
+psutil
+wandb
+speedtest-cli
+
+# ── Pinned (course requires exact version) ────────────────────────────────────
+protobuf==3.20.2

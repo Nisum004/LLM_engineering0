@@ -1,0 +1,113 @@
+# ======================
+# SECRETS & ENVIRONMENT
+# ======================
+.env
+.env.*
+*.env
+secrets.json
+secrets.yaml
+config/secrets.*
+
+# ======================
+# PYTHON
+# ======================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+llm-tutor/
+.conda/
+
+# ======================
+# JUPYTER NOTEBOOKS
+# ======================
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+# Uncomment below to ignore all notebook outputs
+# *.ipynb
+
+# ======================
+# ML / AI ARTIFACTS
+# ======================
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
+*.gguf
+models/
+checkpoints/
+runs/
+wandb/
+mlruns/
+outputs/
+*.pkl
+*.pickle
+
+# Datasets
+data/raw/
+data/processed/
+*.csv
+*.parquet
+*.jsonl
+*.arrow
+*.hdf5
+*.h5
+
+# ======================
+# API KEYS (extra safety)
+# ======================
+*api_key*
+*api-key*
+*token*
+*secret*
+openai_key*
+hf_*
+
+# ======================
+# IDE & OS
+# ======================
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ======================
+# LOGS & TEMP
+# ======================
+*.log
+*.tmp
+*.temp
+logs/
+tmp/
+temp/
+cache/
+.cache/
+
+# ======================
+# NODE (if any frontend)
+# ======================
+node_modules/
+npm-debug.log*
