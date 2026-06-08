@@ -5,7 +5,7 @@ import json
 from typing import List
 from dotenv import load_dotenv
 import chromadb
-from agents.planning_agent import PlanningAgent
+from agents.planning_agent_ollama import PlanningAgent
 from agents.deals import Opportunity
 from sklearn.manifold import TSNE
 import numpy as np
